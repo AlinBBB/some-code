@@ -9,7 +9,10 @@ pipeline {
 
     stage('test') {
       steps {
-        timestamps()
+        timestamps() {
+          sleep 10
+        }
+
       }
     }
 
